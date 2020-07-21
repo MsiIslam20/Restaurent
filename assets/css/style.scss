@@ -1,0 +1,631 @@
+@import "variable";
+@import "fonts";
+// @import 'nice-select';
+
+/*
+=============
+General css
+=============
+*/
+html{
+  scroll-behavior: smooth;
+}
+.shrink{
+  background: $color-white;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.09);
+}
+button.navbar-toggler {
+  outline: none;
+}
+.container{
+  max-width:1300px;
+  font-family: "openSans";
+}
+h1{
+  font-family: "circular-medium";
+  font-weight: 500;
+}
+input:focus {
+  outline:0px !important;
+}
+.ml_5{
+  margin-left: 11rem;
+  margin-top: 50px;
+}
+
+// Start navigation
+/*
+=============
+Navigation area
+=============
+*/
+
+.nav-sidebar{
+  position: fixed;
+  right: -350px;
+  top: 0;
+  background:$heading-font-color;
+  width: 350px;
+  height: 100%;
+  transition: .8s;
+  ul{
+    padding: 20px 0px;
+    margin-top: 50%;
+    li{
+      margin: 30px 0px;
+      a{
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 20px;
+        color:$color-white;
+        font-family: "openSans";
+        font-weight: 600;
+      }
+    }
+  }
+}
+.active_nav{
+  right:0;
+  overflow: auto;
+}
+.active-color{
+  color: #fff;
+}
+.mh-nav{
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.navbar-toggler{
+  overflow: auto;
+  z-index: 2;
+  i{
+    font-size: 30px;
+    transition: all .8s;
+  }
+}
+
+/*
+=============
+Landing area
+=============
+*/
+.landing_inner{
+  padding: 265px 0px;
+  h1{
+    color: $heading-font-color;
+    font-size: 100px;
+    line-height: 107px;
+    letter-spacing: -2.6px;
+  }
+  p{
+    color: $paragraph-color;
+    font-size: 18px;
+    opacity: .5;
+    line-height: 33px;
+    margin-top: 17px;
+  }
+  .landing_button{
+    width: 281px;
+    height: 70px;
+    margin-top: 60px;
+    .button_text{
+      width: 208px;
+      height: 65px;;
+      float: left;
+      background: $button-color; 
+      border-radius: 5px 0px 0px 5px;
+      p{
+        padding:16px 32px;
+        color: $color-white;
+        opacity: 1;
+        margin: 0 auto;
+      }
+    }
+    .arrow{
+      width: 69px;
+      height: 65px;
+      float: left;
+      background: $button-color-two;
+      padding: 20px 26px;
+      color:$color-white;
+      font-size: 16px;
+      border-radius: 0px 5px 5px 0px;
+  }
+    }
+  }
+
+  // Start about area
+  /*
+=============
+About area
+=============
+*/
+.about_area{
+  padding: 130px 0px;
+  .about_image{
+    margin-left: -600px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .about_inner{
+    padding: 160px 0px;
+    h5{
+      font-size: 18px;
+      letter-spacing: 1.7px;
+      text-align: left;
+      color: $button-color;
+      &:before{
+        content: "";
+        width: 30px;
+        height: 2px;
+        background:$button-color;
+        display: block;
+        position: absolute;
+        margin-top: -22px;
+        left: auto;
+      }
+    }
+    h1{
+      font-size: 60px;
+      line-height: 1.08;
+      letter-spacing: -1.6px;
+      text-align: left;
+      color: $heading-font-color;
+      margin-top: 43px;
+    }
+    p{
+      opacity: 0.5;
+      font-size: 18px;
+      // font-weight: 600;
+      line-height: 1.83;
+      text-align: left;
+      color: $paragraph-color;
+      margin-top: 30px;
+    }
+    .about_button{
+      width: 281px;
+      height: 70px;
+      margin-top: 75px;
+      .button_text{
+        width: 208px;
+        height: 65px;
+        float: left;
+        background: $button-color; 
+        border-radius: 5px 0px 0px 5px;
+        p{
+          padding:16px 32px;
+          color: $color-white;
+          opacity: 1;
+          display: grid;
+          margin: 0 auto;
+          place-items: center;
+        }
+      }
+      .arrow{
+        width: 69px;
+        height: 65px;
+        float: left;
+        background: $button-color-two;
+        padding: 20px 26px;
+        color:$color-white;
+        font-size: 16px;
+        border-radius: 0px 5px 5px 0px;
+      }
+    }
+  }
+}
+
+/*
+=============
+Item Area
+=============
+*/
+.item_area{
+  padding-top: 130px;
+  padding-bottom: 30px;
+  .mg_0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .card_main{
+    width: 290px;
+    border: none;
+    transition: all .3s;
+    margin: 0px 17px;
+    margin-top: 60px;
+    &:hover{
+      box-shadow: 0 51px 60px 0 rgba(24, 24, 24, 0.09);
+    }
+
+    span{
+      color: $button-color;
+      &:nth-child(7){
+        color: $menu-card-color;
+        opacity: .5;
+      }
+    }
+  }
+  .part-2{
+    margin-top: 60px;
+  }
+  .social_headline{
+    h5{
+      font-size: 18px;
+      letter-spacing: 1.7px;       
+      color: $button-color;
+      &::before{
+        content: "";
+        width: 30px;
+        height: 3px;
+        background:$button-color;
+        display: block;
+        position: absolute;
+        margin-top: -18px;
+
+      }
+    }
+    h1{
+      font-size: 50px;
+      line-height: 1.2;
+      letter-spacing: -1.3px;
+      color: $heading-font-color;
+      margin-top: 35px;
+      margin-bottom: 40px;
+    }
+  }
+  .Filter{
+    ul{
+      border-bottom: 1px solid #9099a085;
+      margin-top: 115px;
+      li{
+        display: inline-block;
+        height: 50px;
+        opacity: 0.5;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: -0.3px;
+        color: $heading-font-color;
+        padding: 0px 25px;
+        padding-bottom: 15px;
+        cursor: pointer;
+        transition: all .5s;
+        &:hover{
+          border-bottom: 5px solid $button-color;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  h5{
+    font-size: 18px;
+    color: $button-color;
+  }
+  p{
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3.3px;
+    color: $menu-card-color;
+  }
+
+  .list_inner{
+    ul{
+      li{
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: $heading-font-color;
+        opacity: .8;
+        margin: 0px 10px;
+        margin-top: 55px;
+
+        span{
+          padding: 12px 18px;
+          background: $button-color;
+          color: $color-white;
+          border-radius: 3px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+// Start menu area
+/*
+=============
+Menu area
+=============
+*/
+
+.mb_30{
+  margin-bottom: 60px;
+}
+.menu_area{
+  padding: 160px 0px;
+  .menu_headline{
+    h5{
+      font-size: 18px;
+      letter-spacing: 1.7px;
+      color: $button-color;
+      &::before{
+        content: "";
+        width: 35px;
+        height: 3px;
+        background:$button-color;
+        display: block;
+        position: absolute;
+        margin-top: -22px;
+        left: 49%;
+      }
+    }
+    h1{
+      font-size: 60px;
+      line-height: 1.2;
+      letter-spacing: -1.6px;
+      color: $heading-font-color;
+      margin-top: 23x;
+    }
+  }
+  .custom_menu_card{
+    padding-top: 75px;
+    place-content: center;
+    .custom_card{
+      padding-left: 0px;
+      padding-right: 0px;
+      margin: 0px 30px;
+
+      .card_inner{
+        padding: 40px 0px;
+        cursor: pointer;
+        transition: all .5s;
+        h2{
+          font-size: 22px;
+          letter-spacing: 4.8px;
+          color: $menu-card-color;
+          margin-top: 40px;
+          border-radius: 5px;
+        }
+        &:hover{
+          box-shadow: 0 51px 60px 0 rgba(24, 24, 24, 0.09);
+        }
+      }
+    }
+  }
+}
+/*
+=============
+Booking area
+=============
+*/
+// Start booking area
+.booking_area{
+  padding: 105px 0px;
+  background: $bg-color;
+  
+  .booking_area_main{
+    width: 989px;
+    height: 433px;
+    box-shadow: 0 51px 60px 0 rgba(24, 24, 24, 0.09);
+    background-color: $color-white;
+    margin: 0 auto;
+    .booking_title{
+      margin-top: 95px;
+      h5{
+        font-size: 18px;
+        letter-spacing: 1.7px;       
+        color: $button-color;
+        &::before{
+          content: "";
+          width: 35px;
+          height: 3px;
+          background:$button-color;
+          display: block;
+          position: absolute;
+          margin-top: -22px;
+          left: 49%;
+
+        }
+      }
+      h1{
+        font-size: 50px;
+        line-height: 1.2;
+        letter-spacing: -1.3px;
+        color: $heading-font-color;
+        margin-top: 23px;
+      }
+    }
+    .booking_inner{
+      margin: 0 auto;
+      h5{
+        font-size: 23.8px;
+        font-weight: bold;
+        line-height: 1.39;
+        color: $heading-font-color;
+        margin-left: 30px;
+        margin-bottom: 20px;
+      }
+      input{
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 1.9px;
+        color: $menu-card-color;
+        border: none;
+        border-radius: 0px;
+        width: 90%;
+        padding: 8px 22px;
+        margin-left: -10px;
+      }
+      .form_custom{
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 1.9px;
+        color: $menu-card-color;
+        border: none;
+        border-radius: 0px;
+      }
+    }
+  }
+  .booking_button{
+    width: 281px;
+    height: 70px;
+    margin-top: 60px !important;
+    margin: 0 auto;
+    .button_text{
+      width: 212px;
+      height: 65px;
+      float: left;
+      background: $button-color; 
+      border-radius: 5px 0px 0px 5px;
+      p{
+        padding:20px 28px;
+        color: $color-white;
+        opacity: 1;
+        margin: 0 auto;
+      }
+    }
+    .arrow{
+      width: 69px;
+      height: 65px;
+      float: left;
+      background: $button-color-two;
+      padding: 20px 26px;
+      color:$color-white;
+      font-size: 16px;
+      border-radius: 0px 5px 5px 0px;
+  }
+    }
+
+}
+.datepicker{
+  width: 260px;
+  box-shadow: 0 51px 60px 0 rgba(24, 24, 24, 0.09);
+}
+
+// Start social area
+/*
+=============
+Social area
+=============
+*/
+.footer{
+  padding-bottom: 120px;
+  .footer_logo{
+    padding: 35px 0px;
+  }
+  .footer_list{
+    margin-left: 70px;
+    ul{
+      li{
+        opacity: 0.6;
+        font-size: 16px;
+        line-height: 1.75;
+        text-align: left;
+        color: $paragraph-color;
+        margin-top: 8px;
+        cursor: pointer;
+        &:nth-child(1){
+          font-size: 18px;
+          font-weight: bold;
+          line-height: 1.56;
+          color: $footer-color;
+          opacity: 1;
+          margin-bottom: 16px;
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+
+}
+.pd_35{
+  padding-left: 45px;
+  padding-right: 0px;  
+}
+
+.social_area{
+  padding: 150px 0px;
+  .social_headline{
+    h5{
+      font-size: 18px;
+      letter-spacing: 1.7px;       
+      color: $button-color;
+      &::before{
+        content: "";
+        width: 30px;
+        height: 3px;
+        background:$button-color;
+        display: block;
+        position: absolute;
+        margin-top: -22px;
+
+      }
+    }
+    h1{
+      font-size: 50px;
+      line-height: 1.2;
+      letter-spacing: -1.3px;
+      color: $heading-font-color;
+      margin-top: 28px;
+      margin-bottom: 60px;
+    }
+  }
+  .card_main{
+    margin: 0px 17px;
+    border: none;
+    background-color: $color-white;
+    cursor: pointer;
+    transition: all .5s;
+    box-shadow: 0 51px 60px 0 rgba(24, 24, 24, 0.09);
+    margin-top: 40px !important;
+    .custom_social_card{
+      padding: 20px 10px 0px 15px;
+      h5{
+        font-size: 18px;
+        font-weight: 600;
+        color: $heading-font-color;
+      }
+      ul{
+        li{
+          display: inline-block;
+          &:nth-child(2){
+            margin-left: 25px;
+          }
+          &:nth-child(3){
+            margin-left: 140px;
+          }
+        }
+      }
+    }
+  }
+}
+// Start footer area
+/*
+=============
+Footer area
+=============
+*/
+.footer_second{
+  padding: 65px 0px;
+  background: $bg-color;
+  p{
+    opacity: 0.6;
+    font-size: 16px;
+    text-align: left;
+    color: $footer-color;
+  }
+  li{
+    display: inline-block;
+    margin: 0px 15px;
+    cursor: pointer;
+    &:nth-child(1){
+      margin-left: 70px;
+    }
+  }
+}
+.instapost{
+  padding: 100px 0px;
+}

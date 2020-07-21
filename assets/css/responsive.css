@@ -1,0 +1,219 @@
+@media only screen and (max-width: 1200px) {
+  .mh-nav {
+    padding: 20px 25px;
+  }
+  .footer_second li:nth-child(1) {
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .mh-nav {
+    padding: 20px 40px;
+  }
+  .landing_inner {
+    padding: 200px 0px;
+  }
+  .landing_inner h1 {
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .landing_inner p {
+    font-size: 16px;
+  }
+  .landing_inner .landing_button {
+    margin-top: 30px;
+  }
+  .item_area .card_main {
+    left: 30%;
+  }
+  .item_area .list_inner ul li {
+    font-size: 15px;
+  }
+  .footer_second li {
+    margin: 0px 10px;
+  }
+  .footer_second li:nth-child(1) {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1, h5 {
+    text-align: center !important;
+  }
+  p {
+    text-align: center !important;
+  }
+  .landing_inner {
+    padding: 180px 0px;
+  }
+  .landing_inner h1 {
+    font-size: 80px;
+    line-height: 85px;
+    letter-spacing: -2.6px;
+    text-align: center;
+  }
+  .landing_inner p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .landing_inner .landing_button {
+    margin: 0 auto;
+  }
+  .landing_inner .landing_button .arrow {
+    font-size: 17px;
+  }
+  .item_area .card_main {
+    left: 10%;
+  }
+  .item_area .social_headline h1 {
+    margin-top: 10px;
+  }
+  .about_area {
+    padding: 70px 0px;
+  }
+  .about_area .about_image {
+    margin-left: 0px;
+  }
+  .about_area .about_inner {
+    padding: 70px 0px;
+  }
+  .about_area .about_inner h5:before {
+    left: 47%;
+  }
+  .about_area .about_inner p {
+    margin-bottom: 30px;
+  }
+  .about_area .about_inner .about_button {
+    margin: 0 auto;
+  }
+  .item_area {
+    padding: 10px 0px;
+  }
+  .item_area h5:before {
+    left: 47%;
+  }
+  .item_area .card_main {
+    margin: 0 17px;
+    margin-bottom: 60px !important;
+  }
+  .item_area .Filter ul {
+    margin-top: 10px;
+  }
+  .item_area .Filter ul li {
+    margin-bottom: 16px;
+  }
+  .menu_area .menu_headline h5:before {
+    left: 47%;
+  }
+  .booking_area {
+    padding: 80px 0px;
+  }
+  .booking_area .booking_area_main {
+    width: 90%;
+    height: 100%;
+  }
+  .booking_area .booking_area_main .booking_title {
+    margin-top: 60px;
+  }
+  .booking_area .booking_area_main .booking_inner h5 {
+    margin-left: 0px;
+  }
+  .booking_area .booking_area_main .booking_inner input {
+    text-align: center;
+    width: 100%;
+    margin-left: 5px;
+  }
+  .booking_area .booking_area_main .booking_inner .form_custom {
+    margin-left: 40%;
+    margin-bottom: 30px;
+  }
+  .booking_area .booking_area_main .booking_inner input {
+    padding: 8px 10px;
+  }
+  .ml_5 {
+    margin-left: 0px;
+  }
+  .footer .footer_logo {
+    text-align: center;
+  }
+  .social_area .social_headline h5:before {
+    left: 47%;
+  }
+  .social_area .social_headline h1 {
+    margin-bottom: 20px;
+  }
+  .social_area .card_main {
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .footer .footer_list {
+    margin-left: 30px;
+  }
+  .footer_second p {
+    text-align: center !important;
+    margin-bottom: 20px;
+  }
+  .footer_second .custom_ul {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer_second .custom_ul li:nth-child(1) {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .nav-sidebar {
+    width: 150px;
+  }
+  .nav-sidebar ul li a {
+    font-size: 12px;
+  }
+  .item_area .list_inner ul li {
+    font-size: 12px;
+  }
+  .booking_area .booking_area_main .booking_inner .form_custom {
+    margin-left: 30%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  h1 {
+    font-size: 40px !important;
+  }
+  p {
+    font-size: 12px !important;
+    line-height: 28px !important;
+  }
+  .landing_inner {
+    padding: 180px 0px;
+  }
+  .landing_inner h1 {
+    font-size: 40px;
+    line-height: 45px;
+    letter-spacing: -2.6px;
+  }
+  .landing_inner p {
+    font-size: 12px;
+  }
+  .landing_inner .landing_button .button_text {
+    width: 185px;
+    height: 57px;
+  }
+  .landing_inner .landing_button .button_text p {
+    padding: 15px 30px;
+  }
+  .landing_inner .landing_button .arrow {
+    font-size: 13px;
+    padding: 19px 26px;
+    width: 60px;
+    height: 57px;
+  }
+  .about_area .about_inner .about_button .button_text p {
+    padding: 20px 32px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
